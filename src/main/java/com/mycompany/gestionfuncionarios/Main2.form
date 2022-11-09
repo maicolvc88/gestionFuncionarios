@@ -57,7 +57,13 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jPFuncionario1" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPFuncionario1" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -68,6 +74,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPFuncionario1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="311" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -90,36 +98,37 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="lblDireccion" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="txtDireccion" alignment="0" pref="191" max="32767" attributes="0"/>
-                                      <Component id="lblNombre" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblApellido" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblTipo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblNumero" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtNombre" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtApellido" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtTipo" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtNumero" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="txtDireccion" alignment="0" pref="191" max="32767" attributes="0"/>
+                                          <Component id="lblNombre" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblApellido" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblTipo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblNumero" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="txtNombre" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtApellido" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtNumero" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="cbxTipo" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="464" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="486" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="lblNivel" min="-2" max="-2" attributes="0"/>
                                           <Component id="lblTelefono" min="-2" max="-2" attributes="0"/>
                                           <Component id="lblFecha" min="-2" max="-2" attributes="0"/>
                                           <Component id="lblSexo" min="-2" max="-2" attributes="0"/>
-                                          <Component id="txtSexo" alignment="0" pref="180" max="32767" attributes="0"/>
-                                          <Component id="txtFecha" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtFecha" alignment="0" pref="180" max="32767" attributes="0"/>
                                           <Component id="txtTelefono" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="txtNivel" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <Component id="btnGuardar" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbxNivel" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbxSexo" alignment="0" min="-2" pref="127" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="154" pref="173" max="32767" attributes="0"/>
+                          <EmptySpace min="154" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
@@ -133,7 +142,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="txtNombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtSexo" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cbxSexo" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -152,8 +161,8 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="txtTipo" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtTelefono" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cbxTipo" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -163,7 +172,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="txtNumero" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtNivel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cbxNivel" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
@@ -174,9 +183,7 @@
                               </Group>
                               <Component id="btnGuardar" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" min="-2" pref="311" max="-2" attributes="0"/>
-                          <EmptySpace pref="14" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -231,19 +238,13 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtApellido">
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtTipo">
-                </Component>
                 <Component class="javax.swing.JTextField" name="txtNumero">
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtDireccion">
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtSexo">
-                </Component>
                 <Component class="javax.swing.JTextField" name="txtFecha">
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtTelefono">
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtNivel">
                 </Component>
                 <Component class="javax.swing.JButton" name="btnGuardar">
                   <Properties>
@@ -253,22 +254,67 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarActionPerformed"/>
                   </Events>
                 </Component>
-                <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                <Component class="javax.swing.JComboBox" name="cbxNivel">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Seleccione"/>
+                        <StringItem index="1" value="Tecnico"/>
+                        <StringItem index="2" value="Tecnologo"/>
+                        <StringItem index="3" value="Profesional"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
                   <AuxValues>
-                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                   </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cbxSexo">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Seleccione"/>
+                        <StringItem index="1" value="Masculino"/>
+                        <StringItem index="2" value="Femenino"/>
+                        <StringItem index="3" value="Otro"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JComboBox" name="cbxTipo">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                      <StringArray count="4">
+                        <StringItem index="0" value="Seleccione"/>
+                        <StringItem index="1" value="CC"/>
+                        <StringItem index="2" value="CE"/>
+                        <StringItem index="3" value="TI"/>
+                      </StringArray>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
 
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-                  <SubComponents>
-                    <Component class="javax.swing.JTable" name="tblFuncionarios">
-                      <Properties>
-                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="0" rowCount="0"/>
-                        </Property>
-                      </Properties>
-                    </Component>
-                  </SubComponents>
-                </Container>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="tblFuncionarios">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="0" rowCount="0"/>
+                    </Property>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
@@ -293,10 +339,10 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="jPEdit" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="88" max="32767" attributes="0"/>
+                      <Component id="jPEdit" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -317,48 +363,65 @@
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="lblNombreEdit" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblApellidoEdit" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
-                                              <Component id="lblTipoEdit" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblNumeroEdit" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblFuncionarioId" alignment="0" min="-2" pref="82" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lblNombreEdit" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblApellidoEdit" alignment="0" min="-2" pref="61" max="-2" attributes="0"/>
+                                                  <Component id="lblTipoEdit" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblNumeroEdit" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblFuncionarioId" alignment="0" min="-2" pref="82" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="txtApellidoEdit" alignment="1" min="-2" pref="134" max="-2" attributes="0"/>
+                                                  <Component id="txtTipoEdit" alignment="1" min="-2" pref="134" max="-2" attributes="0"/>
+                                                  <Component id="txtNumeroEdit" alignment="1" min="-2" pref="134" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
                                       </Group>
-                                      <Component id="txtFuncionarioId" pref="140" max="32767" attributes="0"/>
-                                      <Component id="txtNombreEdit" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtApellidoEdit" alignment="1" min="-2" pref="134" max="-2" attributes="0"/>
-                                      <Component id="txtTipoEdit" alignment="1" min="-2" pref="134" max="-2" attributes="0"/>
-                                      <Component id="txtNumeroEdit" alignment="1" min="-2" pref="134" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                          <Component id="txtNombreEdit" min="-2" pref="140" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="txtFuncionarioId" min="-2" pref="140" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="242" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="lblSexoEdit" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblFechaEdit" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="lblTelefonoEdit" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="232" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="lblSexoEdit" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblFechaEdit" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <Component id="lblTelefonoEdit" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                          <Component id="lblDireccionEdit" min="-2" pref="74" max="-2" attributes="0"/>
+                                          <Component id="txtDireccionEdit" alignment="0" pref="170" max="32767" attributes="0"/>
+                                          <Component id="txtFechaEdit" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtTelefonoEdit" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtNivelEdit" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="txtSexoEdit" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
                                       <Component id="lblNivelEdit" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
-                                      <Component id="lblDireccionEdit" min="-2" pref="74" max="-2" attributes="0"/>
-                                      <Component id="txtDireccionEdit" alignment="0" pref="170" max="32767" attributes="0"/>
-                                      <Component id="txtSexoEdit" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtFechaEdit" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtTelefonoEdit" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="txtNivelEdit" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="lblFuncionarios" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cbxFuncionarios" alignment="0" min="-2" pref="299" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
                                   <Component id="btnActualizar" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
                                   <Component id="btnEliminar" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="lblFuncionarios" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="cbxFuncionarios" min="-2" pref="299" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="480" max="32767" attributes="0"/>
                       </Group>
@@ -381,7 +444,7 @@
                               <Component id="txtFuncionarioId" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtDireccionEdit" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblNombreEdit" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="lblSexoEdit" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -421,12 +484,12 @@
                               <Component id="txtNumeroEdit" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtNivelEdit" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="43" max="32767" attributes="0"/>
+                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="btnActualizar" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="btnEliminar" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                          <EmptySpace pref="171" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -509,13 +572,16 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtDireccionEdit">
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtSexoEdit">
-                </Component>
                 <Component class="javax.swing.JTextField" name="txtFechaEdit">
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtTelefonoEdit">
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtNivelEdit">
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtSexoEdit">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtSexoEditActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnActualizar">
                   <Properties>
